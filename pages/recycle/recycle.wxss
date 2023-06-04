@@ -1,0 +1,52 @@
+.top {
+  margin: 25rpx auto;
+  padding: 25rpx 0;
+  width: 90%;
+  height: 230rpx;
+  background-color: white;
+  border-radius: 25rpx;
+}
+
+.topText {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.steps {
+  margin-top: 60rpx;
+}
+
+.service {
+  width: 90%;
+  height: 100rpx;
+  margin: 0 auto;
+}
+
+.serviceBut {
+  width: 100%;
+}
+
+.btn {
+  width: 90%;
+  height: 500rpx;
+  background-color: white;
+  margin: 25rpx auto;
+  border-radius: 45rpx;
+
+}
+
+.btnText {
+  padding: 50rpx 60rpx;
+  font-size: 35rpx;
+
+}
+
+.release {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.releasebut {
+  width: 100%;
+}

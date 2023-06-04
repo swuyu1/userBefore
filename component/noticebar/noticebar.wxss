@@ -1,0 +1,8 @@
+.notice {
+  height: 30rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  padding-top: 10rpx;
+  padding-right: 0;
+  padding-left: 0;
+}

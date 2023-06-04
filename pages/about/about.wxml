@@ -1,0 +1,39 @@
+<view class="top">
+	<view class="avatar-example">
+		<t-avatar image="/img/图标.png" size="200rpx" />
+	</view>
+	<view class="avatar-example">拾物语</view>
+	<view class="avatar-example">Version 2.0.0</view>
+</view>
+<t-cell-group theme="card" class="cellGroup">
+	<t-cell
+	 title="去评分"
+	 hover
+	 arrow
+	 class="cell"
+	/>
+	<t-cell
+	 title="功能介绍"
+	 hover
+	 arrow
+	 class="cell"
+	/>
+	<t-cell
+	 title="投诉"
+	 hover
+	 arrow
+	 class="cell"
+	/>
+	<t-cell
+	 title="版本更新"
+	 hover
+	 arrow
+	 class="cell"
+	/>
+</t-cell-group>
+<view class="btn">
+	<view class="example">拾物语 版权所有</view>
+	<view class="example">Copyright © 2023-2023 swuyu. All Rights Reserved</view>
+</view>
+
+

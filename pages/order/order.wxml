@@ -1,0 +1,127 @@
+<view wx:if="{{list.length == 0}}">
+	<view class="top">暂时还没订单，先去发布吧
+	</view>
+	<view class="release">
+		<t-button
+		 theme="primary"
+		 size="large"
+		 shape="round"
+		 class="releasebut"
+		 bind:tap="release"
+		>发布订单
+		</t-button>
+	</view>
+</view>
+<view wx:for="{{list}}" wx:key='index' class="item">
+	<view wx:if="{{item.category=='失物招领'}}">
+		<t-button
+		 size="extra-small"
+		 theme="danger"
+		 class="but"
+		 variant="text"
+		>{{item.category}}
+		</t-button>
+		<view class="text"> {{item.title}} </view>
+		<view class="type">{{item.type}} </view>
+		<view class="state">
+			<t-button
+			 size="extra-small"
+			 theme="danger"
+			 class="but"
+			 wx:if="{{item.state == '已取消'}}"
+			>{{item.state}}
+			</t-button>
+			<t-button size="extra-small" class="but" wx:if="{{item.state == '进行中'}}">{{item.state}} </t-button>
+			<t-button
+			 size="extra-small"
+			 theme="primary"
+			 class="but"
+			 wx:if="{{item.state == '已完成'}}"
+			>{{item.state}}
+			</t-button>
+		</view>
+	</view>
+	<view wx:elif="{{item.category=='交易'}}">
+		<t-button
+		 size="extra-small"
+		 theme="primary"
+		 class="but"
+		 variant="text"
+		>{{item.category}}
+		</t-button>
+		<view class="text"> {{item.title}} </view>
+		<view class="type">{{item.type}} </view>
+		<view class="price">{{item.price}} </view>
+		<view class="state">
+			<t-button
+			 size="extra-small"
+			 theme="danger"
+			 class="but"
+			 wx:if="{{item.state == '已取消'}}"
+			>{{item.state}}
+			</t-button>
+			<t-button size="extra-small" class="but" wx:if="{{item.state == '进行中'}}">{{item.state}} </t-button>
+			<t-button
+			 size="extra-small"
+			 theme="primary"
+			 class="but"
+			 wx:if="{{item.state == '已完成'}}"
+			>{{item.state}}
+			</t-button>
+		</view>
+	</view>
+	<view wx:elif="{{item.category=='回收'}}">
+		<t-button
+		 size="extra-small"
+		 theme="light"
+		 class="but"
+		 variant="text"
+		>{{item.category}}
+		</t-button>
+		<view class="place"> 地点：{{item.place}} </view>
+		<view class="time"> 预约时间：{{item.time}} </view>
+		<view class="state">
+			<t-button
+			 size="extra-small"
+			 theme="danger"
+			 class="but"
+			 wx:if="{{item.state == '已取消'}}"
+			>{{item.state}}
+			</t-button>
+			<t-button size="extra-small" class="but" wx:if="{{item.state == '进行中'}}">{{item.state}} </t-button>
+			<t-button
+			 size="extra-small"
+			 theme="primary"
+			 class="but"
+			 wx:if="{{item.state == '已完成'}}"
+			>{{item.state}}
+			</t-button>
+		</view>
+	</view>
+	<view wx:elif="{{item.category=='维修'}}">
+		<t-button size="extra-small" class="but" variant="text">{{item.category}}</t-button>
+		<view class="place"> 地点：{{item.place}} </view>
+		<view class="time"> 预约时间：{{item.time}} </view>
+		<view class="type">{{item.mode}} </view>
+		<view class="state">
+			<t-button
+			 size="extra-small"
+			 theme="danger"
+			 class="but"
+			 wx:if="{{item.state == '已取消'}}"
+			>{{item.state}}
+			</t-button>
+			<t-button size="extra-small" class="but" wx:if="{{item.state == '进行中'}}">{{item.state}} </t-button>
+			<t-button
+			 size="extra-small"
+			 theme="primary"
+			 class="but"
+			 wx:if="{{item.state == '已完成'}}"
+			>{{item.state}}
+			</t-button>
+		</view>
+	</view>
+</view>
+<view class="btn" />
+
+

@@ -1,0 +1,9 @@
+<t-notice-bar
+ class="notice"
+ visible="{{visible}}"
+ prefixIcon="null"
+ marquee="{{marquee1}}"
+ content="拾物语登场了，欢迎各位同学推广使用！"
+/>
+
+

@@ -1,0 +1,42 @@
+.input-example {
+  margin: 0 32rpx;
+}
+
+.input {
+  margin: 30rpx 20rpx;
+  box-shadow: 0 2rpx 12rpx 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10rpx
+}
+
+.submit {
+  width: 400rpx;
+  margin: 50rpx auto;
+}
+
+.btn {
+  height: 140rpx;
+}
+
+.box {
+  margin: 30rpx 20rpx;
+  box-shadow: 0 2rpx 12rpx 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10rpx;
+  padding: 32rpx;
+  background-color: #fff;
+}
+
+.radio {
+  margin-left: 50rpx;
+}
+
+.typeLabel {
+  float: left;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  padding-right: 50rpx;
+}
+
+.wrapper {
+  margin: 30rpx 20rpx;
+
+}

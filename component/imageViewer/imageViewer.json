@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "t-action-sheet": "tdesign-miniprogram/action-sheet/action-sheet",
+    "t-image-viewer": "tdesign-miniprogram/image-viewer/image-viewer"
+  }
+}

@@ -1,0 +1,31 @@
+<!-- 轮播图 -->
+<t-swiper
+ autoplay="{{autoplay}}"
+ list="{{swiperList}}"
+ bind:click="swiperClick"
+ height="800rpx"
+/>
+<t-image-viewer
+ closeBtn="{{closeBtn}}"
+ showIndex="{{showIndex}}"
+ visible="{{visible}}"
+ images="{{imgs}}"
+ initialIndex="{{index}}"
+ bind:change="onChange"
+ bind:close="onClose"
+/>
+<view>
+	[{{transaction.type}}]
+	{{transaction.title}}
+	<view>
+		{{transaction.introduce}}
+	</view>
+	<view>
+		价格：{{transaction.price}}
+	</view>
+	<view>
+		联系方式：{{transaction.phone}}
+	</view>
+</view>
+
+

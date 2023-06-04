@@ -1,0 +1,35 @@
+<!-- 轮播图 -->
+<t-swiper
+ autoplay="{{autoplay}}"
+ list="{{swiperList}}"
+ bind:click="swiperClick"
+ height="800rpx"
+/>
+
+<t-image-viewer
+ closeBtn="{{closeBtn}}"
+ showIndex="{{showIndex}}"
+ visible="{{visible}}"
+ images="{{imgs}}"
+ initialIndex="{{index}}"
+ bind:change="onChange"
+ bind:close="onClose"
+/>
+<view>
+	<view wx:if="{{found.type=='寻找'}}" class="te">
+		<t-button size="extra-small" theme="danger">寻找</t-button>
+		{{found.title}}
+	</view>
+	<view wx:else class="te">
+		<t-button size="extra-small" theme="primary">捡到</t-button>
+		{{found.title}}
+	</view>
+	<view>
+		{{found.introduce}}
+	</view>
+	<view>
+		联系方式：{{found.phone}}
+	</view>
+</view>
+
+

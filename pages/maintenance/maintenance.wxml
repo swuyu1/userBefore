@@ -1,0 +1,48 @@
+<view class="far">
+	<view class='gzs'>Hope网维工作室价格表</view>
+	<view class="forms">
+		<view class="thd">
+			<view class='tr'>
+				<view class='th'>服务</view>
+				<view class='th'>价格(元)</view>
+				<view class='th'>说明</view>
+			</view>
+		</view>
+		<view class="tbo">
+			<view class='tr'>
+				<view class='td t'>清灰</view>
+				<view class='td'>35</view>
+				<view class='td'>清灰赠送硅脂服务</view>
+				<view class='td t'>重装</view>
+				<view class='td'>40</view>
+				<view class='td'>系统优化/选择版本</view>
+				<view class='td t'>维修</view>
+				<view class='td'>根据损坏程度</view>
+				<view class='td'>可联系客服咨询</view>
+				<view class='td t'>配置升级</view>
+				<view class='td'>根据升级方案</view>
+				<view class='td'>咨询客服选择方案</view>
+				<view class='td t'>p图</view>
+				<view class='td'>根据质量定价</view>
+				<view class='td'>专业美工,图片精修</view>
+				<view class='td t'>打印</view>
+				<view class='td'>0.4</view>
+				<view class='td'>10张以上7.5折</view>
+				<view class='td t'>跑腿</view>
+				<view class='td'>根据距离收费</view>
+				<view class='td'>取送修机一条龙</view>
+				<view class='td t'>软件安装</view>
+				<view class='td'>根据搭建环境</view>
+				<view class='td'>联系客服咨询</view>
+			</view>
+		</view>
+	</view>
+	<view class='text1'>
+		工作室:7教2楼
+	</view>
+	<view class='text1'>
+		我们承诺:不收高价，低于市场价，欢迎同学老师咨询！
+	</view>
+</view>
+
+

@@ -1,0 +1,14 @@
+.wrapper {
+    border-color: white;
+}
+
+
+
+.release {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.releasebut {
+    width: 100%;
+}

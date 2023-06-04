@@ -1,0 +1,21 @@
+<t-tab-bar
+ value="{{value}}"
+ bindchange="onChange"
+ shape="round"
+ theme="tag"
+ split="{{false}}"
+ class="tab"
+>
+	<t-tab-bar-item
+	 wx:for="{{tabBar}}"
+	 wx:for-item="item"
+	 wx:for-index="index"
+	 wx:key="index"
+	 icon="{{item.icon}}"
+	 value="{{item.value}}"
+	>
+		{{item.label}}
+	</t-tab-bar-item>
+</t-tab-bar>
+
+

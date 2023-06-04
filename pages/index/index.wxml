@@ -1,0 +1,55 @@
+<t-toast id="t-toast" />
+<noticebar/>
+<swiper/>
+<view class="button-example">
+	<t-button
+	 theme="light"
+	 size="medium"
+	 class="btn"
+	 bind:tap="btnClickRecycle"
+	>回收
+	</t-button>
+	<t-button
+	 theme="light"
+	 size="medium"
+	 class="btn"
+	 bind:tap="btnClickTransaction"
+	>交易
+	</t-button>
+	<t-button
+	 theme="light"
+	 size="medium"
+	 class="btn"
+	 bind:tap="btnClickMaintenance"
+	>维修
+	</t-button>
+	<t-button
+	 theme="light"
+	 size="medium"
+	 class="btn"
+	 bind:tap="btnClickFound"
+	>失物招领
+	</t-button>
+</view>
+<navigator url="../foundDetails/foundDetails?id={{item.id}}" wx:for="{{found}}" wx:key='index'>
+	<view class="col">
+		<t-image
+		 src="{{'https://img.swuyu.cn/'+item.imgs[0]}}"
+		 lazy="true"
+		 mode="scaleToFill"
+		 shape="round"
+		 class="imgs"
+		/>
+		<view wx:if="{{item.type=='寻找'}}" class="te">
+			<t-button size="extra-small" theme="danger">寻找</t-button>
+			{{item.title}}
+		</view>
+		<view wx:else class="te">
+			<t-button size="extra-small" theme="primary">捡到</t-button>
+			{{item.title}}
+		</view>
+	</view>
+</navigator>
+<fab/>
+
+

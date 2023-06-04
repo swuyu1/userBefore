@@ -1,0 +1,67 @@
+<t-toast id="t-toast" />
+<t-input
+ label="用户名"
+ placeholder="请输入文字"
+ value="{{userName}}"
+ data-field-name="userName"
+ bind:change='handleInputChange'
+/>
+<view class="wrapper">
+	<t-upload
+	 class="upload"
+	 mediaType="{{['image']}}"
+	 max="{{1}}"
+	 files="{{fileList}}"
+	 bind:add="handleAdd"
+	 bind:remove="handleRemove"
+	/>
+</view>
+<t-input
+ label="手机号"
+ placeholder="输入手机号码"
+ type="number"
+ value="{{phone}}"
+ data-field-name="phone"
+ bind:change='handleInputChangePhone'
+ tips="{{phoneError ? '手机号输入不正确' : ''}}"
+/>
+<t-input
+ label="地址"
+ placeholder="请输入文字"
+ value="{{place}}"
+ data-field-name="place"
+ bind:change='handleInputChange'
+/>
+<t-cell
+ title="选择日期"
+ hover
+ note="{{dateText || ''}}"
+ arrow
+ data-mode="date"
+ bind:tap="showPicker"
+ class="test"
+ t-class="pannel-item"
+/>
+<t-date-time-picker
+ title="选择日期"
+ visible="{{dateVisible}}"
+ mode="date"
+ defaultValue="{{date}}"
+ format="YYYY-MM-DD"
+ bind:change="onConfirm"
+ bind:cancel="hidePicker"
+ start="{{start}}"
+ end="{{end}}"
+/>
+<view class="release">
+	<t-button
+	 theme="primary"
+	 size="large"
+	 shape="round"
+	 class="releasebut"
+	 bind:tap="release"
+	>确定
+	</t-button>
+</view>
+
+

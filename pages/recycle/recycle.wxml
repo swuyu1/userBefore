@@ -1,0 +1,41 @@
+<view class="box">
+	<view class="top">
+		<view class="topText">
+			卖书流程
+		</view>
+		<view class="block">
+			<t-steps current="0" bind:change="onFirstChange" class="steps">
+				<t-step-item wx:for="{{top}}" wx:key="index" content="{{item.content}}" />
+			</t-steps>
+		</view>
+	</view>
+	<view class="service">
+		<t-button
+		 theme="light"
+		 open-type="contact"
+		 size="large"
+		 class="serviceBut"
+		>卖书有疑问？点击联系客服
+		</t-button>
+	</view>
+	<view class="btn">
+		<view class="btnText">
+			细节补充：
+			<view>1.我们将以0.5元1kg回收</view>
+			<view>2.支持上门回收，面对面交易</view>
+			<view>3.钱款当面点清</view>
+		</view>
+	</view>
+	<view class="release">
+		<t-button
+		 theme="primary"
+		 size="large"
+		 shape="round"
+		 class="releasebut"
+		 bind:tap="release"
+		>点我发布订单吧
+		</t-button>
+	</view>
+</view>
+
+

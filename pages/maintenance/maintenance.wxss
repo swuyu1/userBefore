@@ -1,0 +1,42 @@
+.far {
+    width: 699rpx;
+    margin: auto;
+    font-size: 28rpx;
+}
+
+.gzs {
+    text-align: center;
+    font-size: 60rpx;
+    font-weight: 700;
+}
+
+.tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.td,
+.th {
+    height: 60rpx;
+    width: 233rpx;
+    outline: 1px solid black;
+    line-height: 60rpx;
+}
+
+.th {
+    font-size: 40rpx;
+    text-align: center;
+}
+
+.t {
+    color: red;
+    font-size: 35rpx;
+    text-align: center;
+}
+
+.text1 {
+    margin-top: 30rpx;
+    font-size: 35rpx;
+
+}

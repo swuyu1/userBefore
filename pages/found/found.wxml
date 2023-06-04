@@ -1,0 +1,33 @@
+<t-toast id="t-toast" />
+<view class="example-search">
+	<t-search
+	 placeholder="搜索预设文案"
+	 shape="round"
+	 model:value="{{search}}"
+	 bind:submit="search"
+	/>
+</view>
+<view wx:if="{{nullData}}">暂无相关信息</view>
+<view wx:else>
+	<navigator url="../foundDetails/foundDetails?id={{item.id}}" wx:for="{{found}}" wx:key='index'>
+		<view class="col">
+			<t-image
+			 src="{{'https://img.swuyu.cn/'+item.imgs[0]}}"
+			 lazy="true"
+			 mode="scaleToFill"
+			 shape="round"
+			 class="imgs"
+			/>
+			<view wx:if="{{item.type=='寻找'}}" class="te">
+				<t-button size="extra-small" theme="danger">寻找</t-button>
+				{{item.title}}
+			</view>
+			<view wx:else class="te">
+				<t-button size="extra-small" theme="primary">捡到</t-button>
+				{{item.title}}
+			</view>
+		</view>
+	</navigator>
+</view>
+
+

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "noticebar": "/component/noticebar/noticebar",
+    "swiper": "/component/swiper/swiper",
+    "fab": "/component/fab/fab",
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-toast": "tdesign-miniprogram/toast/toast"
+  }
+}

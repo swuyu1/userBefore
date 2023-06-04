@@ -1,0 +1,8 @@
+<t-back-top
+ theme="{{backTopTheme}}"
+ text="{{backTopText}}"
+ bind:to-top="onToTop"
+ class="backTop"
+/>
+
+

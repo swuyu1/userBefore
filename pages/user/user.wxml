@@ -1,0 +1,40 @@
+<view class="top">
+	<navigator url="../setting/setting" hover-class="none">
+		<view class="avatar-example">
+			<t-avatar image="{{userInof.picture == ''|| userInof.picture==null ? '/img/头像.png':'https://img.swuyu.cn/'+userInof.picture}}" size="200rpx" />
+		</view>
+		<view class="avatar-example">
+			{{userInof.userName == null ? '点击完善个人信息':userInof.userName}}
+		</view>
+	</navigator>
+</view>
+<t-cell-group theme="card" class="cellGroup">
+	<t-cell
+	 title="我的订单"
+	 leftIcon="internet"
+	 jump-type="switchTab"
+	 url="../order/order"
+	 hover
+	 arrow
+	 class="cell"
+	/>
+	<t-cell
+	 title="设置"
+	 leftIcon="setting"
+	 jump-type="navigateTo"
+	 url="../setting/setting"
+	 hover
+	 arrow
+	 class="cell"
+	/>
+	<t-cell
+	 title="关于我们"
+	 leftIcon="lock-on"
+	 url="../about/about"
+	 hover
+	 arrow
+	 class="cell"
+	/>
+</t-cell-group>
+
+
